@@ -126,3 +126,20 @@ app.UseStaticFiles();
 
 // ...
 ```
+
+Precisamos agora criar o página de `Layout` padrão para compartilharmos entre as `views`. Crie um diretório chamado `Shared`, e na raiz deste diretório crie o arquivo `_Layout.cshtml`.
+
+Para que esta configuração tenha efeito é necessário criarmos o arquivo `_ViewStart.cshtml`, no diretório `View`. Este arquivo indicará qual arquivo será usado como layout padrão.
+
+```C#
+@{
+    Layout = "_Layout";
+}
+```
+
+Agora para que as `TagsHelpers` possam funcionar criamos o arquivo `_ViewImports.cshtml`, também no diretório `Views`.
+
+```C#
+@using AppMvc
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+```
