@@ -1,5 +1,7 @@
 # App MVC .NET
 
+## Criando um projeto MVC
+
 Para iniciar uma aplicação web vazia, digite o comando abaixo.
 
 ```shell
@@ -69,4 +71,26 @@ Logo e seguida cria e `View` responsável por retorna a `Index` deste `controlle
 
 ```cshtml
 Hello World!
+```
+
+## Adicionando ferramentas de Front-End
+
+Antes de prosseguirmos é necessário instalarmos uma `lib` para nos auxiliar na adição de `plugins` ao projeto, esta ferramenta é a `libman`.
+
+Para instalar execute o comando, isso irá realizar a instalação global da lib:
+
+```shell
+dotnet tool install -g Microsoft.Web.LibraryManager.Cli
+```
+
+Para criar o arquivo `libman.json`, na raiz do projeto execute o comando e escolha a `defaultProvider` padrão que irá utilizar. Neste caso vou utilizar o valor default `cdnjs`:
+
+```shell
+libman init
+```
+
+Antes de instalar a `libs` que iremos utilizar no front-end do projeto criaremos os diretórios que irão armazenar estes arquivos.
+
+```shell
+mkdir -p wwwroot/{css/.gitkeep,js/.gitkeep,lib/.gitkeep}
 ```
