@@ -92,5 +92,25 @@ libman init
 Antes de instalar a `libs` que iremos utilizar no front-end do projeto criaremos os diretórios que irão armazenar estes arquivos.
 
 ```shell
-mkdir -p wwwroot/{css/.gitkeep,js/.gitkeep,lib/.gitkeep}
+mkdir -p wwwroot/{css,js,lib}
+```
+
+O próximo passo é instalarmos a `libs` referentes ao `jquery`, `bootstrap` e `jquery-validation-unobtrusive`.
+
+Instalando o `jquery`.
+
+```shell
+libman install jquery@3.7.1 --destination wwwroot/lib/jquery
+```
+
+Instalando o `bootstrap`
+
+```shell
+libman install bootstrap@5.3.3 --destination wwwroot/lib/bootstrap
+```
+
+Instalando o `jquery-validation-unobtrusive`
+
+```shell
+libman install jquery-validation-unobtrusive@4.0.0 --destination wwwroot/lib/jquery-validation-unobtrusive
 ```
