@@ -9,7 +9,7 @@ dotnet new web -n AppWeb
 O para parâmetro `-n` é utilizado para dar nome ao projeto que esta sendo criado.
 Ao final da execução você terá os seguintes arquivos criados, conforme imagem abaixo.
 
-![[Pasted image 20240514084439.png]]
+![Estrutura Inicial de arquivos e diretórios](docs/assets/20240514084439.png)
 
 Para iniciarmos a criação da estrutura do `MVC` criaremos os seguintes diretórios: `Controllers`, `Models` e `Views`.
 
