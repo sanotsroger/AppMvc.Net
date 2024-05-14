@@ -482,3 +482,6 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Remove SASS bootstrap
+wwwroot/lib/bootstrap/scss/*
