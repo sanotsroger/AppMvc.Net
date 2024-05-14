@@ -114,3 +114,15 @@ Instalando o `jquery-validation-unobtrusive`
 ```shell
 libman install jquery-validation-unobtrusive@4.0.0 --destination wwwroot/lib/jquery-validation-unobtrusive
 ```
+
+Para que a inclusão deste arquivos estaticos funcionem corretamente é necessário adicionarmos no arquivo `Program.cs` o trecho abaixo, que será responsável pelo carregamento destes arquivos.
+
+```C#
+// ...
+
+var app = builder.Build();
+
+app.UseStaticFiles();
+
+// ...
+```
